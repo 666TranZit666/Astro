@@ -2466,7 +2466,7 @@ function DiscordLib:Window(text)
 				)
 				
 				function SliderFunc:Change(tochange)
-					CurrentValueFrame.Size = UDim2.new((tochange or 0) / max, 0, 1, 0)
+					CurrentValueFrame.Size = UDim2.new((tochange or 0) / max, -6, 1, 0)
 					Zip.Position = UDim2.new((tochange or 0)/max, -0, 1, 0)
 					ValueLabel.Text = tostring(tochange and math.floor((tochange / max) * (max - min) + min) or 0)
 					pcall(callback, tochange)
