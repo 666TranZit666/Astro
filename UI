@@ -2349,7 +2349,7 @@ function DiscordLib:Window(text)
 				CurrentValueFrame.Name = "CurrentValueFrame"
 				CurrentValueFrame.Parent = SliderFrame
 				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
-				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
+				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 1, 0)
 
 				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
 				CurrentValueFrameCorner.Parent = CurrentValueFrame
@@ -2357,7 +2357,7 @@ function DiscordLib:Window(text)
 				Zip.Name = "Zip"
 				Zip.Parent = SliderFrame
 				Zip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Zip.Position = UDim2.new((start or 0)/max, -6,-0.644999981, 0)
+				Zip.Position = UDim2.new((start or 0)/max, 0, 1, 0)
 				Zip.Size = UDim2.new(0, 10, 0, 18)
 				ZipCorner.CornerRadius = UDim.new(0, 3)
 				ZipCorner.Name = "ZipCorner"
