@@ -3276,6 +3276,7 @@ function DiscordLib:Window(text)
 						KeybindText.Text = inputwait.KeyCode.Name
 						Key = inputwait.KeyCode.Name
 					end
+					return inputwait.KeyCode.Name
 				end)
 				
 				game:GetService("UserInputService").InputBegan:connect(
