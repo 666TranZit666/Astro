@@ -3226,7 +3226,7 @@ function DiscordLib:Window(text)
 				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 				function LabelFunc:UpdateText(Text)
-					Label.Text = Text;
+					LabelTitle.Text = Text;
 				end;
 
 				
