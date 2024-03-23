@@ -3276,14 +3276,13 @@ function DiscordLib:Window(text)
 						KeybindText.Text = inputwait.KeyCode.Name
 						Key = inputwait.KeyCode.Name
 					end
-					return inputwait.KeyCode.Name
 				end)
 				
 				game:GetService("UserInputService").InputBegan:connect(
 				function(current, pressed)
 					if not pressed then
 						if current.KeyCode.Name == Key then
-							pcall(callback)
+							pcall(callback, KeybindText.Text)
 						end
 					end
 				end
